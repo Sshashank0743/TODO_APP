@@ -7,7 +7,7 @@ export default function Index() {
       style={styles.container}>
       <Text style = {styles.content}>Edit app/index.tsx to edit this screen.</Text>
 
-      <Link>Viit about screen</Link>
+      <Link>Visit about screen</Link>
     </View>
   );
 }
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-      
+        gap: 10,
       },
   content: {
         fontSize: 42,
