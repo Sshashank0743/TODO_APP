@@ -6,11 +6,10 @@ export default function Index() {
   return (
     <View
       style={styles.container}>
-      <Text style = {styles.content}>Edit app/index.tsx to edit this screen.</Text>
+      <Text style = {styles.content}>Edit app to edit this screen.</Text>
       <TouchableOpacity onPress={toggleDarkMode}>
-        <Text>toggle the mode</Text>
+        <Text>toggle the current mode</Text>
       </TouchableOpacity>
-
     </View>
   );
 }
