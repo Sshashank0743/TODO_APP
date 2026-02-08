@@ -10,6 +10,9 @@ const Header = () => {
     const homeStyles = createHomeStyles(colors)
 
     const todos = useQuery(api.todos.getTodos);
+
+    const completedCount = todos ? todos.filter((todo) => todo.isCompleted).length : 0;
+    const totalCount = todos ? todos.length : 0;
     return (
         <View style = {homeStyles.header}>  
             <Text>Header</Text>
