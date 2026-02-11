@@ -15,6 +15,7 @@ const Header = () => {
 
   const completedCount = todos ? todos.filter((todo) => todo.isCompleted).length : 0;
   const totalCount = todos ? todos.length : 0;
+  
   const progressPercentage = totalCount > 0 ? (completedCount / totalCount) * 100 : 0;
 
   return (
